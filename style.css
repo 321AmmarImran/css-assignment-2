@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Popins' , sans-serif;
+}
+
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(0, 8, 90);
+    color: #fff;
+}
+
+.wrapper{
+    width: 450px;
+    padding: 30px;
+    background-color:#fff;
+}
+
+.wrapper .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .input-data input{
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    font-size: 17px;
+    border-bottom: 2px solid blue;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-20px);
+    color: blue;
+    font-size: 15px;
+}
+
+.wrapper .input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form-row{
+    height: 40px;
+    width: 100%;
+    position: relative;   
+}
+
+.wrapper .form-row textarea{
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    font-size: 17px;
+    border-bottom: 2px solid blue;
+}
+
+.form-row textarea:focus ~ label{
+    transform: translateY(-20px);
+    color: blue;
+    font-size: 15px;
+}
+
+.wrapper .form-row label{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: grey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+.wrapper .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 6px;
+}
+
+.wrapper .container .a input:hover{
+    color: #fff;
+    background-color: #ADD8E6
+}
+
+.wrapper .container .b input:hover{
+    background-color: red;
+    color: black;
+}
+
+.wrapper .container .a input{
+    margin: 7px;
+    background-color: #77C3EC;
+    padding: 10px;
+}
+
+.wrapper .container .b input{
+    margin: 7px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+
